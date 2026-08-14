@@ -10,33 +10,102 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as EventsRouteImport } from './routes/events'
+import { Route as MinistriesRouteImport } from './routes/ministries'
+import { Route as OrderOfServiceRouteImport } from './routes/order-of-service'
+import { Route as PastoralTeamRouteImport } from './routes/pastoral-team'
+import { Route as SermonsRouteImport } from './routes/sermons'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EventsRoute = EventsRouteImport.update({
+  id: '/events',
+  path: '/events',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MinistriesRoute = MinistriesRouteImport.update({
+  id: '/ministries',
+  path: '/ministries',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OrderOfServiceRoute = OrderOfServiceRouteImport.update({
+  id: '/order-of-service',
+  path: '/order-of-service',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PastoralTeamRoute = PastoralTeamRouteImport.update({
+  id: '/pastoral-team',
+  path: '/pastoral-team',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SermonsRoute = SermonsRouteImport.update({
+  id: '/sermons',
+  path: '/sermons',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/events': typeof EventsRoute
+  '/ministries': typeof MinistriesRoute
+  '/order-of-service': typeof OrderOfServiceRoute
+  '/pastoral-team': typeof PastoralTeamRoute
+  '/sermons': typeof SermonsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/events': typeof EventsRoute
+  '/ministries': typeof MinistriesRoute
+  '/order-of-service': typeof OrderOfServiceRoute
+  '/pastoral-team': typeof PastoralTeamRoute
+  '/sermons': typeof SermonsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/events': typeof EventsRoute
+  '/ministries': typeof MinistriesRoute
+  '/order-of-service': typeof OrderOfServiceRoute
+  '/pastoral-team': typeof PastoralTeamRoute
+  '/sermons': typeof SermonsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/events'
+    | '/ministries'
+    | '/order-of-service'
+    | '/pastoral-team'
+    | '/sermons'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/events'
+    | '/ministries'
+    | '/order-of-service'
+    | '/pastoral-team'
+    | '/sermons'
+  id:
+    | '__root__'
+    | '/'
+    | '/events'
+    | '/ministries'
+    | '/order-of-service'
+    | '/pastoral-team'
+    | '/sermons'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  EventsRoute: typeof EventsRoute
+  MinistriesRoute: typeof MinistriesRoute
+  OrderOfServiceRoute: typeof OrderOfServiceRoute
+  PastoralTeamRoute: typeof PastoralTeamRoute
+  SermonsRoute: typeof SermonsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +117,51 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/events': {
+      id: '/events'
+      path: '/events'
+      fullPath: '/events'
+      preLoaderRoute: typeof EventsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ministries': {
+      id: '/ministries'
+      path: '/ministries'
+      fullPath: '/ministries'
+      preLoaderRoute: typeof MinistriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/order-of-service': {
+      id: '/order-of-service'
+      path: '/order-of-service'
+      fullPath: '/order-of-service'
+      preLoaderRoute: typeof OrderOfServiceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pastoral-team': {
+      id: '/pastoral-team'
+      path: '/pastoral-team'
+      fullPath: '/pastoral-team'
+      preLoaderRoute: typeof PastoralTeamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sermons': {
+      id: '/sermons'
+      path: '/sermons'
+      fullPath: '/sermons'
+      preLoaderRoute: typeof SermonsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  EventsRoute: EventsRoute,
+  MinistriesRoute: MinistriesRoute,
+  OrderOfServiceRoute: OrderOfServiceRoute,
+  PastoralTeamRoute: PastoralTeamRoute,
+  SermonsRoute: SermonsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
