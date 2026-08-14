@@ -5,10 +5,10 @@ import { PageHeader } from "../components/PageHeader";
 export const Route = createFileRoute("/order-of-service")({
   head: () => ({
     meta: [
-      { title: "Order of Service — New Hope Church" },
-      { name: "description", content: "What to expect during a Sunday worship service at New Hope Church." },
-      { property: "og:title", content: "Order of Service — New Hope Church" },
-      { property: "og:description", content: "What to expect during a Sunday worship service at New Hope Church." },
+      { title: "Order of Service — Peculiar City" },
+      { name: "description", content: "What to expect during a Sunday worship service at Peculiar City." },
+      { property: "og:title", content: "Order of Service — Peculiar City" },
+      { property: "og:description", content: "What to expect during a Sunday worship service at Peculiar City." },
       { property: "og:url", content: "/order-of-service" },
     ],
     links: [{ rel: "canonical", href: "/order-of-service" }],
@@ -56,7 +56,7 @@ function OrderOfServicePage() {
         <div className="mb-12 flex flex-col items-center">
           <PageHeader
             title="Order of Service"
-            description="Not sure what to expect? Here's a simple guide to a typical Sunday morning at New Hope. Our services last about 75 minutes."
+            description="Not sure what to expect? Here's a simple guide to a typical Sunday morning at Peculiar City. Our services last about 75 minutes."
           />
         </div>
 

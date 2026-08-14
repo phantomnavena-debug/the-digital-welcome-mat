@@ -5,10 +5,10 @@ import pastorImage from "../assets/pastor.jpg";
 export const Route = createFileRoute("/pastoral-team")({
   head: () => ({
     meta: [
-      { title: "Pastoral Team — New Hope Church" },
-      { name: "description", content: "Meet the pastoral team and leaders serving New Hope Church." },
-      { property: "og:title", content: "Pastoral Team — New Hope Church" },
-      { property: "og:description", content: "Meet the pastoral team and leaders serving New Hope Church." },
+      { title: "Pastoral Team — Peculiar City" },
+      { name: "description", content: "Meet the pastoral team and leaders serving Peculiar City." },
+      { property: "og:title", content: "Pastoral Team — Peculiar City" },
+      { property: "og:description", content: "Meet the pastoral team and leaders serving Peculiar City." },
       { property: "og:url", content: "/pastoral-team" },
     ],
     links: [{ rel: "canonical", href: "/pastoral-team" }],
@@ -20,7 +20,7 @@ const team = [
   {
     name: "Pastor Sarah Mitchell",
     role: "Lead Pastor",
-    bio: "Sarah has served New Hope since 2018. She is passionate about teaching Scripture, developing leaders, and creating a church where everyone feels at home.",
+    bio: "Sarah has served Peculiar City since 2018. She is passionate about teaching Scripture, developing leaders, and creating a church where everyone feels at home.",
     image: pastorImage,
   },
   {
@@ -57,7 +57,7 @@ function PastoralTeamPage() {
         <div className="mb-12 flex flex-col items-center">
           <PageHeader
             title="Pastoral Team"
-            description="Our leaders are here to serve, teach, and care for the New Hope community."
+            description="Our leaders are here to serve, teach, and care for the Peculiar City community."
           />
         </div>
 

@@ -6,10 +6,10 @@ import communityImage from "../assets/community.jpg";
 export const Route = createFileRoute("/ministries")({
   head: () => ({
     meta: [
-      { title: "Ministries — New Hope Church" },
-      { name: "description", content: "Discover ministries and groups at New Hope Church for every age and stage of life." },
-      { property: "og:title", content: "Ministries — New Hope Church" },
-      { property: "og:description", content: "Discover ministries and groups at New Hope Church for every age and stage of life." },
+      { title: "Ministries — Peculiar City" },
+      { name: "description", content: "Discover ministries and groups at Peculiar City for every age and stage of life." },
+      { property: "og:title", content: "Ministries — Peculiar City" },
+      { property: "og:description", content: "Discover ministries and groups at Peculiar City for every age and stage of life." },
       { property: "og:url", content: "/ministries" },
     ],
     links: [{ rel: "canonical", href: "/ministries" }],
@@ -57,7 +57,7 @@ function MinistriesPage() {
         <div className="mb-12 flex flex-col items-center">
           <PageHeader
             title="Ministries"
-            description="Whatever your age or stage, there's a place for you to grow and serve at New Hope."
+            description="Whatever your age or stage, there's a place for you to grow and serve at Peculiar City."
           />
         </div>
 

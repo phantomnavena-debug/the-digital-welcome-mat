@@ -6,7 +6,7 @@ export function Footer() {
       <div className="container-page py-12">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
-            <h3 className="font-heading text-lg font-normal text-foreground">New Hope Church</h3>
+            <h3 className="font-heading text-lg font-normal text-foreground">Peculiar City</h3>
             <p className="mt-2 text-sm text-muted-foreground">
               A welcoming community of faith, hope, and love. Join us as we grow together in Christ.
             </p>
@@ -25,7 +25,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
-                <span>hello@newhopechurch.org</span>
+                <span>hello@peculiarcity.org</span>
               </li>
             </ul>
           </div>
@@ -42,7 +42,7 @@ export function Footer() {
 
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-border pt-6 sm:flex-row">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} New Hope Church. All rights reserved.
+            © {new Date().getFullYear()} Peculiar City. All rights reserved.
           </p>
           <p className="flex items-center gap-1 text-sm text-muted-foreground">
             Made with <Heart className="h-4 w-4 fill-primary text-primary" aria-hidden="true" /> for our community
