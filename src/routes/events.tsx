@@ -5,10 +5,10 @@ import { PageHeader } from "../components/PageHeader";
 export const Route = createFileRoute("/events")({
   head: () => ({
     meta: [
-      { title: "Events — New Hope Church" },
-      { name: "description", content: "Upcoming events at New Hope Church. Worship nights, community gatherings, Bible studies, and more." },
-      { property: "og:title", content: "Events — New Hope Church" },
-      { property: "og:description", content: "Upcoming events at New Hope Church. Worship nights, community gatherings, Bible studies, and more." },
+      { title: "Events — Peculiar City" },
+      { name: "description", content: "Upcoming events at Peculiar City. Worship nights, community gatherings, Bible studies, and more." },
+      { property: "og:title", content: "Events — Peculiar City" },
+      { property: "og:description", content: "Upcoming events at Peculiar City. Worship nights, community gatherings, Bible studies, and more." },
       { property: "og:url", content: "/events" },
     ],
     links: [{ rel: "canonical", href: "/events" }],
@@ -68,7 +68,7 @@ function EventsPage() {
         <div className="mb-12 flex flex-col items-center">
           <PageHeader
             title="Upcoming Events"
-            description="There's always something happening at New Hope. We'd love to see you at one of these gatherings."
+            description="There's always something happening at Peculiar City. We'd love to see you at one of these gatherings."
           />
         </div>
 

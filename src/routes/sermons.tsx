@@ -5,10 +5,10 @@ import { PageHeader } from "../components/PageHeader";
 export const Route = createFileRoute("/sermons")({
   head: () => ({
     meta: [
-      { title: "Sermons — New Hope Church" },
-      { name: "description", content: "Listen to recent sermons and messages from the pastors of New Hope Church." },
-      { property: "og:title", content: "Sermons — New Hope Church" },
-      { property: "og:description", content: "Listen to recent sermons and messages from the pastors of New Hope Church." },
+      { title: "Sermons — Peculiar City" },
+      { name: "description", content: "Listen to recent sermons and messages from the pastors of Peculiar City." },
+      { property: "og:title", content: "Sermons — Peculiar City" },
+      { property: "og:description", content: "Listen to recent sermons and messages from the pastors of Peculiar City." },
       { property: "og:url", content: "/sermons" },
     ],
     links: [{ rel: "canonical", href: "/sermons" }],

@@ -19,7 +19,7 @@ export function NavBar() {
       <div className="container-page flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2 text-foreground transition-colors hover:text-primary">
           <Church className="h-7 w-7 text-primary" aria-hidden="true" />
-          <span className="font-heading text-xl font-normal tracking-tight">New Hope Church</span>
+          <span className="font-heading text-xl font-normal tracking-tight">Peculiar City</span>
         </Link>
 
         <nav className="hidden md:flex md:items-center md:gap-1">

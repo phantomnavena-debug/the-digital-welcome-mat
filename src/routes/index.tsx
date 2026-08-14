@@ -5,9 +5,9 @@ import heroImage from "../assets/hero.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "New Hope Church — Welcome Home" },
+      { title: "Peculiar City — Welcome Home" },
       { name: "description", content: "A welcoming church community in Graceville. Join us for worship, sermons, events, and ministries." },
-      { property: "og:title", content: "New Hope Church — Welcome Home" },
+      { property: "og:title", content: "Peculiar City — Welcome Home" },
       { property: "og:description", content: "A welcoming church community in Graceville. Join us for worship, sermons, events, and ministries." },
       { property: "og:url", content: "/" },
     ],
@@ -44,7 +44,7 @@ function HomePage() {
           <div className="max-w-2xl text-white">
             <p className="text-sm font-medium uppercase tracking-widest text-white/90">Welcome to</p>
             <h1 className="font-heading mt-3 text-4xl font-normal leading-tight sm:text-5xl lg:text-6xl">
-              New Hope Church
+              Peculiar City
             </h1>
             <p className="mt-6 text-lg text-white/90 sm:text-xl">
               A place where everyone is welcome, faith is deepened, and lives are transformed by the love of Christ.
@@ -76,7 +76,7 @@ function HomePage() {
               We're glad you're here
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Whether you're exploring faith for the first time or looking for a church family, New Hope Church is a place
+              Whether you're exploring faith for the first time or looking for a church family, Peculiar City is a place
               where you can belong, believe, and become who God made you to be.
             </p>
           </div>
@@ -88,7 +88,7 @@ function HomePage() {
         <div className="container-page">
           <div className="mb-10 text-center">
             <h2 className="font-heading text-3xl font-normal text-foreground sm:text-4xl">Explore</h2>
-            <p className="mt-3 text-muted-foreground">Find what you're looking for at New Hope.</p>
+            <p className="mt-3 text-muted-foreground">Find what you're looking for at Peculiar City.</p>
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

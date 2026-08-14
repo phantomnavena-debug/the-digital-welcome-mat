@@ -64,10 +64,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "New Hope Church" },
+      { title: "Peculiar City" },
       { name: "description", content: "A welcoming church community in Graceville. Join us for worship, sermons, events, and ministries." },
-      { name: "author", content: "New Hope Church" },
-      { property: "og:title", content: "New Hope Church" },
+      { name: "author", content: "Peculiar City" },
+      { property: "og:title", content: "Peculiar City" },
       { property: "og:description", content: "A welcoming church community in Graceville. Join us for worship, sermons, events, and ministries." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
