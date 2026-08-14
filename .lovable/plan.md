@@ -24,6 +24,7 @@ Facebook (the page and the group media album) cannot be read by any of my fetch 
 ## Technical notes
 
 - Sermon data stays as a typed array in the sermons route with real titles, speaker, duration and YouTube video IDs — no API key or backend needed.
+- Thumbnails come straight from YouTube's static image CDN (`https://i.ytimg.com/vi/<id>/hqdefault.jpg`), lazy-loaded with 16:9 aspect ratio and alt text, so no API quota or image assets are involved.
 - The featured sermon uses a lazy-loaded YouTube iframe embed (privacy-enhanced `youtube-nocookie.com`) so it doesn't slow first paint.
 - Social links go in `Footer.tsx` and optionally the navbar, using existing lucide icons.
 - No backend, database, or new dependencies.
