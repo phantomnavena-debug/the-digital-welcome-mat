@@ -5,10 +5,10 @@ import heroImage from "../assets/hero.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Peculiar City — Welcome Home" },
-      { name: "description", content: "A welcoming church community in Graceville. Join us for worship, sermons, events, and ministries." },
-      { property: "og:title", content: "Peculiar City — Welcome Home" },
-      { property: "og:description", content: "A welcoming church community in Graceville. Join us for worship, sermons, events, and ministries." },
+      { title: "Peculiar City Komarock — The Home of Kingdom Experience" },
+      { name: "description", content: "Peculiar City Komarock — The Home of Kingdom Experience. Daily Morning Charge, Sunday worship, events and ministries in Nairobi, Kenya." },
+      { property: "og:title", content: "Peculiar City Komarock — The Home of Kingdom Experience" },
+      { property: "og:description", content: "Peculiar City Komarock — The Home of Kingdom Experience. Daily Morning Charge, Sunday worship, events and ministries in Nairobi, Kenya." },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -18,7 +18,7 @@ export const Route = createFileRoute("/")({
 
 const quickLinks = [
   { title: "Events", description: "See what's happening this week and beyond.", icon: Calendar, to: "/events", color: "bg-accent/40 text-accent-foreground" },
-  { title: "Sermons", description: "Listen to recent messages from our pastors.", icon: Headphones, to: "/sermons", color: "bg-secondary/40 text-secondary-foreground" },
+  { title: "Sermons", description: "Watch the latest Morning Charge messages.", icon: Headphones, to: "/sermons", color: "bg-secondary/40 text-secondary-foreground" },
   { title: "Order of Service", description: "What to expect when you visit on Sunday.", icon: BookOpen, to: "/order-of-service", color: "bg-accent/40 text-accent-foreground" },
   { title: "Pastoral Team", description: "Meet the leaders who serve our church.", icon: Users, to: "/pastoral-team", color: "bg-secondary/40 text-secondary-foreground" },
   { title: "Ministries", description: "Find a group or ministry to grow with.", icon: Heart, to: "/ministries", color: "bg-accent/40 text-accent-foreground" },
@@ -37,31 +37,31 @@ function HomePage() {
             height={1088}
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-plum-deep/95 via-plum/75 to-plum/30" />
         </div>
 
         <div className="container-page relative flex min-h-[500px] flex-col justify-center py-20 sm:min-h-[600px] lg:min-h-[700px]">
-          <div className="max-w-2xl text-white">
-            <p className="text-sm font-medium uppercase tracking-widest text-white/90">Welcome to</p>
+          <div className="max-w-2xl text-background">
+            <p className="text-sm font-medium uppercase tracking-widest text-primary">Welcome to</p>
             <h1 className="font-heading mt-3 text-4xl font-normal leading-tight sm:text-5xl lg:text-6xl">
               Peculiar City
             </h1>
-            <p className="mt-6 text-lg text-white/90 sm:text-xl">
-              A place where everyone is welcome, faith is deepened, and lives are transformed by the love of Christ.
+            <p className="mt-6 text-lg text-background/85 sm:text-xl">
+              The Home of Kingdom Experience in Komarock, Nairobi. Join the daily Morning Charge with Pst. Levis Yonga and grow with a family that believes God for more.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 to="/events"
-                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-primary transition-colors hover:bg-white/90"
+                className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
               >
                 Join Us This Sunday
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
               <Link
                 to="/sermons"
-                className="inline-flex items-center gap-2 rounded-full border border-white/50 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-white/10"
+                className="inline-flex items-center gap-2 rounded-full border border-background/50 px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-background/10"
               >
-                Watch a Sermon
+                Watch the Morning Charge
               </Link>
             </div>
           </div>
@@ -98,7 +98,7 @@ function HomePage() {
                 <Link
                   key={link.to}
                   to={link.to}
-                  className="group flex flex-col rounded-2xl border border-border bg-card p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
+                  className="group float-card flex flex-col rounded-2xl border border-border bg-card p-6 shadow-sm"
                 >
                   <div className={`mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl ${link.color}`}>
                     <Icon className="h-6 w-6" aria-hidden="true" />

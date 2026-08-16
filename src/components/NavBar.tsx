@@ -18,11 +18,21 @@ export function NavBar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/90 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 text-foreground transition-colors hover:text-primary">
-          <img src={flameAsset.url} alt="" width={32} height={32} className="h-8 w-8" aria-hidden="true" />
+        <Link
+          to="/"
+          aria-label="Peculiar City — home"
+          className="flex items-center gap-2.5 text-foreground transition-colors hover:text-primary"
+        >
+          <img
+            src={flameAsset.url}
+            alt="Peculiar City flame logo"
+            width={44}
+            height={44}
+            className="h-11 w-11 shrink-0"
+          />
           <span className="flex flex-col leading-none">
             <span className="font-heading text-xl font-normal tracking-tight">Peculiar City</span>
-            <span className="mt-0.5 text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
+            <span className="mt-1 text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
               The Home of Kingdom Experience
             </span>
           </span>
