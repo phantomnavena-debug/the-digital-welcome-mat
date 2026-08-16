@@ -177,3 +177,46 @@
 @utility container-page {
   @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
 }
+
+@utility float-card {
+  transition:
+    transform 400ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 400ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+
+  &:hover {
+    transform: translateY(-10px) scale(1.015);
+    box-shadow:
+      0 24px 48px -16px color-mix(in oklab, var(--plum-deep) 45%, transparent),
+      0 4px 12px -4px color-mix(in oklab, var(--copper) 30%, transparent);
+  }
+}
+
+@utility reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 700ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+
+  &[data-revealed="true"] {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .float-card {
+    transition: none;
+  }
+
+  .float-card:hover {
+    transform: none;
+  }
+}
