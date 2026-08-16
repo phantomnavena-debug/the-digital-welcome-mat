@@ -18,35 +18,35 @@ export const Route = createFileRoute("/pastoral-team")({
 
 const team = [
   {
-    name: "Pastor Sarah Mitchell",
+    name: "Pst. Levis Yonga",
     role: "Lead Pastor",
-    bio: "Sarah has served Peculiar City since 2018. She is passionate about teaching Scripture, developing leaders, and creating a church where everyone feels at home.",
+    bio: "Pst. Levis leads Peculiar City Komarock and teaches the daily Morning Charge broadcast, calling believers into freedom of mind, boldness and Kingdom identity.",
     image: pastorImage,
   },
   {
-    name: "Pastor David Chen",
-    role: "Associate Pastor",
-    bio: "David oversees discipleship and men's ministries. He loves helping people grow in faith through small groups, mentorship, and biblical teaching.",
+    name: "Pastoral Care Team",
+    role: "Counselling & Follow-up",
+    bio: "Our care team walks with members through prayer, counselling and follow-up, making sure no one journeys alone.",
   },
   {
-    name: "Rev. Maria Thompson",
-    role: "Pastor of Care & Counseling",
-    bio: "Maria leads our pastoral care and counseling ministries. She has a heart for walking alongside people through life's joys and challenges.",
+    name: "Worship Team",
+    role: "Praise & Worship",
+    bio: "Our worship team leads the house into the presence of God each service and across our online broadcasts.",
   },
   {
-    name: "James Wright",
-    role: "Worship Pastor",
-    bio: "James directs our worship and creative arts teams. He believes worship is a powerful way to encounter God and respond to His goodness.",
+    name: "Youth & Teens Leaders",
+    role: "Next Generation",
+    bio: "Raising a generation rooted in the Word, with mentorship, fellowship and space to discover their gifts.",
   },
   {
-    name: "Rachel Kim",
-    role: "Children & Families Director",
-    bio: "Rachel leads our children's ministry and family resources. She creates safe, fun, and faith-filled environments for kids to learn about Jesus.",
+    name: "Children's Ministry Team",
+    role: "Kingdom Kids",
+    bio: "Creating a safe, joyful environment where children learn about Jesus at their own level.",
   },
   {
-    name: "Daniel Brooks",
-    role: "Youth Pastor",
-    bio: "Daniel invests in middle and high school students, helping them build authentic faith and friendships that last.",
+    name: "Media & Broadcast Team",
+    role: "Digital Missions",
+    bio: "The team behind the Morning Charge livestreams, taking the message of the house beyond Komarock.",
   },
 ];
 
