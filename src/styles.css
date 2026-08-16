@@ -36,6 +36,10 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
   --color-ring-offset-background: var(--background);
+  --color-plum: var(--plum);
+  --color-plum-deep: var(--plum-deep);
+  --color-copper: var(--copper);
+  --color-blush: var(--blush);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
