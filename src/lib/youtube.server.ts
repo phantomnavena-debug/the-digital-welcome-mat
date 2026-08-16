@@ -41,7 +41,8 @@ function decodeEntities(value: string): string {
 
 function readTag(entry: string, tag: string): string | undefined {
   const match = entry.match(new RegExp(`<${tag}>([\\s\\S]*?)</${tag}>`));
-  return match ? decodeEntities(match[1].trim()) : undefined;
+  const value = match?.[1];
+  return value === undefined ? undefined : decodeEntities(value.trim());
 }
 
 export function parseChannelFeed(xml: string): ChannelVideo[] {
