@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import flameAsset from "../assets/flame.png.asset.json";
+import logoAsset from "../assets/logo.png.asset.json";
 
 const navItems = [
   { label: "Home", to: "/" },
@@ -17,25 +17,19 @@ export function NavBar() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/90 backdrop-blur">
-      <div className="container-page flex h-16 items-center justify-between">
+      <div className="container-page flex h-20 items-center justify-between">
         <Link
           to="/"
           aria-label="Peculiar City — home"
-          className="flex items-center gap-2.5 text-foreground transition-colors hover:text-primary"
+          className="flex items-center transition-opacity hover:opacity-80"
         >
           <img
-            src={flameAsset.url}
-            alt="Peculiar City flame logo"
-            width={44}
-            height={44}
-            className="h-11 w-11 shrink-0"
+            src={logoAsset.url}
+            alt="Peculiar City — The Home of Kingdom Experience"
+            width={894}
+            height={552}
+            className="h-12 w-auto sm:h-14"
           />
-          <span className="flex flex-col leading-none">
-            <span className="font-heading text-xl font-normal tracking-tight">Peculiar City</span>
-            <span className="mt-1 text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
-              The Home of Kingdom Experience
-            </span>
-          </span>
         </Link>
 
         <nav className="hidden md:flex md:items-center md:gap-1">

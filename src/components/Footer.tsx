@@ -1,6 +1,6 @@
 import { MapPin, Mail, Facebook, Youtube, Heart } from "lucide-react";
 import { Link } from "@tanstack/react-router";
-import flameAsset from "../assets/flame.png.asset.json";
+import logoAsset from "../assets/logo.png.asset.json";
 import {
   FACEBOOK_GROUP_URL,
   FACEBOOK_PAGE_URL,
@@ -13,15 +13,18 @@ export function Footer() {
       <div className="container-page py-14">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <Link to="/" aria-label="Peculiar City — home" className="flex items-center gap-2.5">
+            <Link
+              to="/"
+              aria-label="Peculiar City — home"
+              className="inline-flex rounded-xl bg-background p-3 transition-opacity hover:opacity-90"
+            >
               <img
-                src={flameAsset.url}
-                alt="Peculiar City flame logo"
-                width={40}
-                height={40}
-                className="h-10 w-10"
+                src={logoAsset.url}
+                alt="Peculiar City — The Home of Kingdom Experience"
+                width={894}
+                height={552}
+                className="h-14 w-auto"
               />
-              <span className="font-heading text-lg font-normal">Peculiar City</span>
             </Link>
             <p className="mt-3 text-sm text-background/70">
               The Home of Kingdom Experience. A community in Komarock growing daily in the Word,
