@@ -169,9 +169,9 @@ function SermonsPage() {
         {rest.length > 0 ? (
           <>
             <h2 className="font-heading mb-6 text-2xl font-normal text-foreground">More messages</h2>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {rest.map((video, index) => (
-                <SermonCard key={video.videoId} video={video} delay={(index % 3) * 90} />
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {rest.slice(0, 12).map((video, index) => (
+                <SermonCard key={video.videoId} video={video} delay={(index % 4) * 90} />
               ))}
             </div>
           </>
