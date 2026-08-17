@@ -36,3 +36,10 @@ Short bios: I'll write brief, neutral placeholder bios for Grace, Charity and Be
 
 - Full names and roles for Pastor Charity and Pastor Betty, plus their photos.
 - Real bios for Pastor Grace, Charity and Betty.
+
+## Sermons page grid
+
+- Show a fixed **12** messages below the featured video (the feed returns 15, so the grid is always full — well above the 8 minimum, and it degrades gracefully if fewer are available).
+- Even arrangement: 2 columns on tablet, **4 on desktop**, so 12 cards fill three complete rows with no ragged last row (today's 3-column layout leaves an uneven remainder).
+- All cards share one uniform height: fixed 16:9 thumbnail, title clamped to two lines, date pinned to the card footer.
+- Stagger of the scroll-reveal animation adjusted to the new column count.
